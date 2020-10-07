@@ -18,7 +18,12 @@ const people = [
 // an argument and returns an array of their full names (each full name is a string).
 
 function fullName(peopleArr) {
-  // return something
+let namePeople = ""
+
+peopleArr.forEach((element) =>{
+  namePeople += element.name.first + element.name.middle + element.name.last
+})
+return namePeople.split(" ")
 }
 
 // 2. Do a console.log to verify your function.
