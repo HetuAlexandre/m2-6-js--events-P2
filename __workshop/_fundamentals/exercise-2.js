@@ -24,12 +24,12 @@ function avgAge(peopleArr) {
   peopleArr.forEach(element => {
     
   agePeople +=  element.age 
- 
+
   });
   return Math.round(agePeople / peopleArr.length)
   
   // return object.values(avgAge) = math.round()
- 
+
   // return something
 }
 
