@@ -20,6 +20,16 @@ const people = [
 // Use Math.round()
 
 function avgAge(peopleArr) {
+  let agePeople = 0;
+  peopleArr.forEach(element => {
+    
+  agePeople +=  element.age 
+ 
+  });
+  return Math.round(agePeople / peopleArr.length)
+  
+  // return object.values(avgAge) = math.round()
+ 
   // return something
 }
 
