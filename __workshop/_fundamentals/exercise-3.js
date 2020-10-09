@@ -18,12 +18,12 @@ const people = [
 // an argument and returns an array of their full names (each full name is a string).
 
 function fullName(peopleArr) {
-let namePeople = ""
 
-peopleArr.forEach((element) =>{
-  namePeople += element.name.first + element.name.middle + element.name.last
-})
-return namePeople.split(" ")
+  return peopleArr.map((person) =>{
+    const {first, middle, last} = person && person.name || {};
+    const nameArr = [first,middle,last].filter((name) => Boolean(name));
+    return nameArr.join(" ");
+  });
 }
 
 // 2. Do a console.log to verify your function.
