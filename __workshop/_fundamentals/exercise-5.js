@@ -86,8 +86,20 @@ const staffMembers = [
 ];
 
 const getData = (arr, key, val) => {
-  // return something
+    let newArray = arr.filter ((element)=> { 
+      if(typeof val ==="string") { 
+        return element[key] === val;
+      }else { 
+        return element['skillLevels'][key] >= val;
+      }; 
+    }); 
+    return newArray
 };
+
+
+
+
+
 
 // 2. Do a console.log to verify your function.
 
