@@ -5,10 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+  href="https://fonts.googleapis.com/css?family=Jost:400,700&display=swap"
+  rel="stylesheet"/>
 
     <title>Signup Form</title>
   </head>
   <body>
+    <div class="wrapper">
+      <h1>Signup Form</h1>
+      <form>
+        <!-- FULLNAME -->
+        <div class="detail">
+          <label for="fullName">Fullname:</label>
+          <input id="fullName" type="text" name="fullName" value="" required>
+        </div>
+        <!-- STREET ADDRESS -->
+        <div class="detail">
+          <label for="streetAddress">Street address</label>
+          <input id="streetAddress" type="text" name="streetAddress" value="" required>
+        </div>
+        <!-- EMAIL ADDRESS -->
+        <div class="detail">
+          <label for="email">Email address</label>
+          <input id="email" type="email" name="email" value="" required>
+        </div>
+        <!-- PHONE NUMBER -->
+        <div class="detail">
+          <label for="phoneNumber">Phone Number</label>
+          <input id="phoneNumber" type="text" name="phoneNumber" value="" required>
+        </div>
+        <!-- PASSWORD -->
+        <div class="detail">
+          <label for="password">Password</label>
+          <input id="password" type="text" name="password" value="" required>
+        </div>
+        <!-- CONFIRM PASSWORD -->
+        <div class="detail">
+          <label for="confirmPass">Confirm Password</label>
+          <input id="confirmPass" type="text" name="confirmPass" value="" required>
+        </div>
+        <!-- TERM SECTION -->
+        <div class="termSection">
+          <input id="termSection" type="checkbox" name="checkbox" value="" required>
+          <label for="checkbox">I agreed to the <a href="#">terms of service</a> </label>
+        </div>
+        <!-- ERROR MESSAGE -->
+        <div class="error">
+          <!-- <p>Your password is too short! Please provide a password that is at least 10 characters long.</p> -->
+        </div>
+        <footer>
+          <button class="buttonClear" type="button" onclick="">Clear</button>
+          <button class="buttonSubmit" type="submit" onclick="">Submit</button>
+        </footer>
+      </form>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

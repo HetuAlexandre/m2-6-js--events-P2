@@ -1,1 +1,84 @@
-/* add css here */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: "Jost";
+    
+}
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    margin-top: 32px;
+    width: 475px;
+    padding: 24px;
+    background-color: white;
+    border-radius:16px ;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+}
+h1 {
+    padding: 50px;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.detail {
+    padding: 5px 24px 5px 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#fullName, #streetAddress, #email, #phoneNumber, #password, #confirmPass {
+
+    margin-left: 10px;
+    width:250px ;
+    border:#f2f2f2 solid 2px ;
+    border-radius: 5px;
+}
+
+.termSection {
+    text-align: center;
+    width: 100%;
+    margin: 50px 0 50px 0;
+    padding: 15px 0 15px 0;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.error {
+    /* display: none; */
+    text-align: center;
+    width: 100%;
+    padding: 20px 24px 20px 24px;
+    margin-bottom: 50px ;
+    background-color: pink;
+    border-radius: 5px;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+.buttonClear {
+    padding: 10px 40px 10px 40px;
+    color: white;
+    background-color:hsl(333deg, 100%, 44%) ;
+    border-radius: 5px;
+}
+
+.buttonSubmit {
+    padding: 10px 40px 10px 40px;
+    color: white;
+    background-color:hsl(256deg, 100%, 44%) ;
+    border-radius: 5px;
+}
