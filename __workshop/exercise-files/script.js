@@ -10,13 +10,13 @@ form.addEventListener("submit", validation);
 buttonClear.addEventListener("click", clearFunction);
 
 function validation(event){
+    console.log(event.target)
     event.preventDefault();
-    clearError();
     if (termSection.checked === false){
         window.alert("You must agreed the terms of service.");
         
     }
-    if (password.value.length < 10) {
+    else if (password.value.length < 10) {
         errorText.style.display = "block";
         errorText.innerText = ("Your password is too short! Please provide a password that is at least 10 characters long.");
         password.style.border = "3px solid red";
@@ -24,7 +24,7 @@ function validation(event){
         password.style.boxShadow = "0 0 5px blue"
         
     }
-    if (password.value !== confirmPass.value) {
+    else if (password.value !== confirmPass.value) {
         errorText.style.display = "block";
         errorText.innerText = "Your passwords does not match. You must confirm the same passwords.";
         confirmPass.style.border = "3px solid red";
@@ -33,6 +33,9 @@ function validation(event){
     }
     else {
         window.alert("Submission send!")
+        errorText.style.display = "none";
+        password.style = "inherit"
+        confirmPass.style = "inherit"
     }
 }
 
